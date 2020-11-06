@@ -2,7 +2,6 @@ package Cages;
 
 import Animals.Animal;
 import Animals.Carnivorous;
-import Animals.Herbivore;
 
 import java.util.ArrayList;
 
