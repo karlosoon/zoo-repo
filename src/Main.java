@@ -24,7 +24,7 @@ public class Main {
         Leaf leaf = new Leaf();
 
         // cages creation
-        HerbCage herbCage = new HerbCage(2);
+        HerbCage herbCage = new HerbCage(3);
         MeatCage meatCage = new MeatCage(3);
 
         // herb cage filling
