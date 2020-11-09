@@ -2,6 +2,8 @@ import Animals.*;
 import Cages.*;
 import Food.*;
 
+import javax.sound.midi.Soundbank;
+
 public class Main {
 
     public static void main (String[] args) {
@@ -24,26 +26,30 @@ public class Main {
         Leaf leaf = new Leaf();
 
         // cages creation
-        HerbCage herbCage = new HerbCage(3);
-        MeatCage meatCage = new MeatCage(3);
+        AnimalCage<Herbivore> herbivoreAnimalCage = new AnimalCage<>(3);
+        AnimalCage<Animal> animalAnimalCage = new AnimalCage<>(3);
+        AnimalCage<Carnivorous> carnivorousAnimalCage = new AnimalCage<>(3);
 
         // herb cage filling
-        System.out.println("Herbivore cage filling");
-        herbCage.addAnimal(duck);
-        herbCage.addAnimal(lion);
-        herbCage.addAnimal(pegasus);
-        herbCage.addAnimal(lion);
-        herbCage.whoInHerbCage();
+        herbivoreAnimalCage.addAnimal(duck);
+        herbivoreAnimalCage.addAnimal(horse);
+        herbivoreAnimalCage.addAnimal(cow);
+        herbivoreAnimalCage.addAnimal(cow);
+        System.out.println(herbivoreAnimalCage.animalCage);
         System.out.println("---");
 
         // meat cage filling
-        System.out.println("Carnivorous cage filling");
-        meatCage.addAnimal(horse);
-        meatCage.addAnimal(lion);
-        meatCage.addAnimal(tiger);
-        meatCage.addAnimal(fox);
-        meatCage.addAnimal(duck);
-        meatCage.whoInMeatCage();
+        carnivorousAnimalCage.addAnimal(lion);
+        carnivorousAnimalCage.addAnimal(tiger);
+        carnivorousAnimalCage.addAnimal(fox);
+        carnivorousAnimalCage.addAnimal(fox);
+        System.out.println("---");
+
+        // animal cage filling
+        animalAnimalCage.addAnimal(duck);
+        animalAnimalCage.addAnimal(tiger);
+        animalAnimalCage.addAnimal(cow);
+        animalAnimalCage.addAnimal(cow);
         System.out.println("---");
 
         // Herbivore feeding
