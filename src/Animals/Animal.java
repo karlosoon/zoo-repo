@@ -1,14 +1,21 @@
 package Animals;
 
+import Exceptions.WrongFoodException;
 import Food.*;
-
+import Enum.*;
 import java.util.Objects;
 
 public abstract class Animal {
 
     public String name;
 
-    public void eat(Food food){
+    public Size getSize() {
+        return size;
+    }
+
+    private Size size;
+
+    public void eat(Food food) throws WrongFoodException {
         System.out.println("Thank you for food");
     }
 

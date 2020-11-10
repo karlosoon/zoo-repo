@@ -1,12 +1,13 @@
 import Animals.*;
 import Cages.*;
+import Exceptions.WrongFoodException;
 import Food.*;
 
 import javax.sound.midi.Soundbank;
 
 public class Main {
 
-    public static void main (String[] args) {
+    public static void main (String[] args) throws WrongFoodException {
 
         // animals init
         Duck duck = new Duck();
@@ -59,7 +60,7 @@ public class Main {
 
         // Herbivore feeding
         System.out.println("Herbivore feeding");
-        cow.eat(beef);
+        cow.eat(fruit);
         duck.eat(fruit);
         horse.eat(grass);
         pegasus.eat(pork);

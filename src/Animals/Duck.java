@@ -1,9 +1,16 @@
 package Animals;
 
 import Interfaces.Flying;
+import Enum.*;
 
 public class Duck extends Herbivore implements Flying {
-    public String name = "Duck";
+
+    private String name = "Duck";
+    private Size size = Size.SIZE_1;
+
+    public Size getSize() {
+        return size;
+    }
 
     public String getName() {
         return name;

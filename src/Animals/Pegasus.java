@@ -2,9 +2,17 @@ package Animals;
 
 import Interfaces.Artiodactyls;
 import Interfaces.Flying;
+import Enum.*;
 
 public class Pegasus extends Herbivore implements Flying, Artiodactyls {
+
     public String name = "Pegasus";
+
+    Size size = Size.SIZE_4;
+
+    public Size getSize() {
+        return size;
+    }
 
     public String getName() {
         return name;

@@ -1,16 +1,16 @@
 package Animals;
+import Exceptions.WrongFoodException;
 import Food.*;
 
 public abstract class Herbivore extends Animal {
 
     public String name;
+    public void eat(Food food) throws WrongFoodException {
 
-    public void eat(Food food){
-        if (food instanceof Herb){
-            System.out.println("Thank you for food");
+        if (!(food instanceof Herb)){
+            throw new WrongFoodException("Wrong food");
         } else {
-            System.out.println("I don't eat Meat!");
+            System.out.println("Thank you for food");;
         }
     }
-
 }
