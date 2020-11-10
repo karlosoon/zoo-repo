@@ -3,6 +3,8 @@ import Food.*;
 
 public abstract class Carnivorous extends Animal {
 
+    public String name;
+
     public void eat(Food food){
         if (food instanceof Meat){
             System.out.println("Thank you for food");

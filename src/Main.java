@@ -17,6 +17,7 @@ public class Main {
         Pegasus pegasus = new Pegasus();
         Tiger tiger = new Tiger();
 
+
         // food init
         Beef beef = new Beef();
         Chicken chicken = new Chicken();
@@ -31,10 +32,14 @@ public class Main {
         AnimalCage<Carnivorous> carnivorousAnimalCage = new AnimalCage<>(3);
 
         // herb cage filling
+
         herbivoreAnimalCage.addAnimal(duck);
         herbivoreAnimalCage.addAnimal(horse);
         herbivoreAnimalCage.addAnimal(cow);
-        herbivoreAnimalCage.addAnimal(cow);
+        herbivoreAnimalCage.deleteAnimalByName("horse");
+        herbivoreAnimalCage.deleteAnimalByName("Horse");
+        herbivoreAnimalCage.getAnimalByName("cow");
+        herbivoreAnimalCage.getAnimalByName("Cow");
         System.out.println(herbivoreAnimalCage.animalCage);
         System.out.println("---");
 

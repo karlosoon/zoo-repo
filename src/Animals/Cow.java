@@ -1,13 +1,17 @@
 package Animals;
 
-public class Cow extends Herbivore {
+import Interfaces.Artiodactyls;
+
+public class Cow extends Herbivore implements Artiodactyls {
+
+    private String name = "Cow";
 
     public String getName() {
         return name;
     }
 
-    public String name = "Cow";
-
-
-
+    @Override
+    public void hoof() {
+        System.out.println("I have hooves");
+    }
 }

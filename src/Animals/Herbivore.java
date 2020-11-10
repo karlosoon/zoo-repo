@@ -3,7 +3,7 @@ import Food.*;
 
 public abstract class Herbivore extends Animal {
 
-    public String name = "name";
+    public String name;
 
     public void eat(Food food){
         if (food instanceof Herb){
