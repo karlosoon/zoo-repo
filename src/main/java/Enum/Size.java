@@ -1,4 +1,4 @@
-package main.java.Enum;
+package Enum;
 
 public enum Size {
     SIZE_1 (1),

@@ -1,8 +1,8 @@
-package main.java.Animals;
+package Animals;
 
-import main.java.Interfaces.Artiodactyls;
-import main.java.Interfaces.Flying;
-import main.java.Enum.*;
+import Interfaces.Artiodactyls;
+import Interfaces.Flying;
+import Enum.*;
 
 public class Pegasus extends Herbivore implements Flying, Artiodactyls {
 

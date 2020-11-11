@@ -1,7 +1,7 @@
-package main.java.Animals;
+package Animals;
 
-import main.java.Interfaces.Flying;
-import main.java.Enum.*;
+import Interfaces.Flying;
+import Enum.*;
 
 public class Duck extends Herbivore implements Flying {
 

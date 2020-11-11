@@ -1,8 +1,8 @@
 package Animals;
 
-import main.java.Exceptions.WrongFoodException;
-import main.java.Food.*;
-import main.java.Enum.*;
+import Exceptions.WrongFoodException;
+import Food.*;
+import Enum.*;
 import java.util.Objects;
 
 public abstract class Animal {

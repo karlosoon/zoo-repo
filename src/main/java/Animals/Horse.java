@@ -1,7 +1,7 @@
-package main.java.Animals;
+package Animals;
 
-import main.java.Interfaces.Artiodactyls;
-import main.java.Enum.*;
+import Interfaces.Artiodactyls;
+import Enum.*;
 
 public class Horse extends Herbivore implements Artiodactyls {
 

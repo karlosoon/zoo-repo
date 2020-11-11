@@ -1,6 +1,6 @@
-package main.java.Animals;
+package Animals;
 
-import main.java.Enum.*;
+import Enum.*;
 
 public class Fox extends Carnivorous {
     public String name = "Fox";

@@ -1,4 +1,4 @@
-package main.java.Food;
+package Food;
 
 public class Chicken extends Meat {
 }

@@ -1,7 +1,7 @@
-package main.java.Cages;
+package Cages;
 
-import main.java.Animals.Animal;
-import main.java.Enum.*;
+import Animals.Animal;
+import Enum.*;
 
 
 import java.util.HashMap;

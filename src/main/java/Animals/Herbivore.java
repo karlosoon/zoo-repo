@@ -1,6 +1,6 @@
-package main.java.Animals;
-import main.java.Exceptions.WrongFoodException;
-import main.java.Food.*;
+package Animals;
+import Exceptions.WrongFoodException;
+import Food.*;
 
 public abstract class Herbivore extends Animal {
 

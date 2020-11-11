@@ -1,10 +1,7 @@
-package main.java;
-
-
-import main.java.Animals.*;
-import main.java.Cages.*;
-import main.java.Exceptions.WrongFoodException;
-import main.java.Food.*;
+import Animals.*;
+import Cages.*;
+import Exceptions.WrongFoodException;
+import Food.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

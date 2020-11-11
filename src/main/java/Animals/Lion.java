@@ -1,7 +1,7 @@
-package main.java.Animals;
+package Animals;
 
-import main.java.Interfaces.Cat;
-import main.java.Enum.*;
+import Interfaces.Cat;
+import Enum.*;
 
 public class Lion extends Carnivorous implements Cat {
 
