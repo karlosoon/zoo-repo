@@ -11,7 +11,7 @@ public class Main {
 
     public static void main (String[] args) throws WrongFoodException {
 
-        final Logger LOG = LogManager.getLogger(Main.class.getName());
+
 
 
         // animals init
